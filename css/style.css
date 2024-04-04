@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: none;
+    /* border: none; */
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -235,7 +235,6 @@ overflow: hidden;
 
 }
 .about-img{
-
     width: 380px;
     height: 380px;
     margin-right: 3rem;
@@ -276,12 +275,13 @@ overflow: hidden;
   
 }
 .about-text h2{
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.3rem;
    font-size: var(--h2-font);
 }
 .about-text p{
     margin-bottom: 2rem;
     font-weight: 100;
+    font-size: 1.2rem;
 }
 .about-text a{
     font-size: 1rem;
@@ -402,58 +402,9 @@ padding: 8rem 5rem 2.5rem;
 .skills .item-text span:last-child{
     position: absolute;
 }
-.skills .item-text .w-90{
-   margin-left: 85%;
-}
 
-.skills .item-text .w-80{
-   margin-left: 75%;
-}
-.skills .item-text .w-70{
-   margin-left: 65%;
-}
-.skills .item-text .w-60{
-   margin-left: 55%;
-}
-.skills .item-text .w-40{
-   margin-left: 35%;
-}
 
-.progress{
-    margin: 0.8rem 0;
-    width: 100%;
-    height: 20px;
-    background-color: #0b0d0f;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.progress-bar{
-background-color: var(--main-color);
-height: 100%;
-border-top-right-radius: 2px;
-border-bottom-right-radius:2px ;
-}
-.progress-bar.w-90{
-width: 90%;
-}
-.progress-bar.w-70{
-width: 70%;
-}
-.progress-bar.w-80{
-width: 80%;
-}
 
-.progress-bar.w-60{
-width: 60%;
-}
-.progress-bar.w-40{
-width: 40%;
-}
-.skills .rowskills{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:2rem ;
-}
 
 
 
@@ -501,7 +452,52 @@ cursor:pointer
     font-weight: 600;
     color: #fff;
 }
-.row .row-icon{
+.row-icon{
+    margin-top: 10px;
+}
+.row-icon a{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row-icon .icon.satu{
+    background-color: transparent;
+    border: 1px solid #075fe4;
+    color:#075fe4;
+    transition: all .50s ease;
+    box-shadow: 1px 1px 5px var(--main-color);
+}
+.row .icon.satu a{
+    color: #075fe4;
+}
+
+.row-icon .icon.dua{
+    background-color: #075fe4;
+    border: 1px solid #075fe4;
+    color:#075fe4;
+    transition: all .50s ease;
+}
+
+.row .icon.dua a{
+    color: white;
+}
+
+.row .icon.satu:hover{
+    background-color:#075fe4;
+    /* border: 1px solid #075fe4; */
+    color: white;
+}
+.row .icon.dua:hover{
+    background-color:transparent;
+    border: 1px solid #075fe4;
+    box-shadow: 1px 1px 5px var(--main-color);
+    color: #075fe4;
+}
+.row  .icon{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -509,11 +505,24 @@ cursor:pointer
     height: 55px;
     font-size: 17px;
     border-radius: 50%;
-    background-color: #075fe4;
+    margin-left: 5px;
+    transition: all .50s ease;
+    
 }
-.row .row-icon a{
-    color: #fff;
+
+
+
+
+.row .icon.satu a:hover{
+  color: white;
+ 
 }
+.row .icon.dua a:hover{
+  color: #075fe4;
+ 
+}
+
+
 .row h4{
     font-size: 25px;
     font-weight: 700;
@@ -587,7 +596,59 @@ color: var(--text-color);
 border-radius: 50%;
 font-size: 27px;
 }
-
+.skills .row-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 1px solid; */
+    max-width: 50%;
+    margin: auto;
+    }
+.skills .row-skills .col-skills{
+    border: 1px solid var(--second-bg-color);
+    box-sizing: border-box;
+    background-color: var(--bg-color);
+    border-radius: 10%;
+    text-align: center;
+    margin-left:10px ;
+    margin-bottom:10px ;
+    box-shadow: #2d343f;
+    padding:25px;
+    transition: all .50s ease;
+    
+    
+    }
+    .skills .row-skills .col-skills:hover{
+        border:2px solid var(--main-color);
+        /* transform: translateX(-5px) scale(1.03); */
+        transform: translate(-5px) scale(1.03);
+        cursor:pointer
+    }
+    .portfolio .row p{
+        text-align: justify;
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        font-family: 'Darker Grotesque';
+       }
+    .portfolio .row small{
+       
+       font-size: 15px;
+       color: #13bbff;
+       font-family: 'Darker Grotesque';
+        
+       }
+    .portfolio .row .made{
+   margin-top: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: left;
+       }
+    .portfolio .row .made img{
+      width: 20px;
+      height: 20px;
+      padding-top: 5px;
+       }
 
 @media(max-width:1700px){
     header{
@@ -605,11 +666,14 @@ font-size: 27px;
    header .logo{
     font-size: 28px;
    }
+  
+   
 }
 @media(max-width:1380px){
     header{
         padding: 20px 5%;
     }
+    
    header .sticky{
     padding: 14px 5%;
    }
@@ -624,6 +688,7 @@ font-size: 27px;
    }
 }
    @media(max-width:1290px){
+    
 .box{
     padding: 40px 40px 46px;
 }   
@@ -656,6 +721,25 @@ font-size: 27px;
         --h2-font:2.2rem;
         --p-font:13px;
     }
+    .hero-img{
+       
+         width: 290px;
+         height: 290px;
+    
+         
+     }
+   
+    
+     .hero-img .glowing-circle::after{
+         width: 270px;
+         height: 270px;
+        
+         }
+         .glowing-circle .image{
+         width: 270px;
+         height: 270px;
+         
+         }
 }
 @media(max-width:950px){
     :root{
@@ -740,7 +824,7 @@ font-size: 27px;
         .sticky{
             background-color: var(--bg-color);
             box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .2);
-            padding: 12px 6%;
+            padding: 12px 4%;
 
         }
         .h-btn{
@@ -779,7 +863,7 @@ font-size: 27px;
             text-align: center;
         }
         .hero-img{
-           left: 8rem;
+           left: 7.6rem;
             position: relative;
             text-align: center;
     margin-bottom: 3rem;
@@ -805,8 +889,23 @@ font-size: 27px;
                 top: -0.8rem;
                 left: 58%;
             }
-           
-        
-    }
+            .skills .row-skills{
+                max-width: 100%;
+               
+                }
+            .skills .row-skills .col-skills{
+                padding: 5px;
+                
+                }
+                .skills .row-skills .col-skills img{
+                    top: -0.8rem;
+                    width: 80%;
+                    object-fit: cover;
+                }
+            /* .skils .colskills{
+                border: 1px solid;
+            } */
+        }
+   
    
 
