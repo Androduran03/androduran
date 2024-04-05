@@ -434,6 +434,7 @@ padding: 8rem 5rem 2.5rem;
     border: 1px solid transparent;
     box-shadow:0 0 5px var(--main-color);
     padding: 20px;
+   
     transition: all .50s ease;
 }
 .row:hover{
@@ -863,7 +864,7 @@ font-size: 27px;
             text-align: center;
         }
         .hero-img{
-           left: 7.6rem;
+           left: 9.2rem;
             position: relative;
             text-align: center;
     margin-bottom: 3rem;
@@ -905,6 +906,16 @@ font-size: 27px;
             /* .skils .colskills{
                 border: 1px solid;
             } */
+        }
+        @media(max-width: 470px) {
+            .hero-img{
+                left: 6.8rem;
+             }
+             .h-btn{
+                padding: 5px 5px;
+            }
+            
+           
         }
    
    
