@@ -932,9 +932,12 @@ font-size: 27px;
                
               
             }
-         
+           .contact-form form .send-btn{
+    
+    padding-right: 108px;
+         border: 1px solid;
            
         }
-   
+    }
    
 
