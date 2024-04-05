@@ -149,7 +149,7 @@ overflow: hidden;
     position: absolute;
     object-fit: cover;
     max-width: 350px;
-    left: 50%;
+    left: 52.3%;
     transform: translateX(-50%);
     top: 30px;
 }
@@ -667,6 +667,12 @@ font-size: 27px;
    header .logo{
     font-size: 28px;
    }
+   .about-text{
+                
+    text-align: justify;
+   
+  
+}
   
    
 }
@@ -903,6 +909,7 @@ font-size: 27px;
                     width: 80%;
                     object-fit: cover;
                 }
+               
             /* .skils .colskills{
                 border: 1px solid;
             } */
@@ -914,7 +921,18 @@ font-size: 27px;
              .h-btn{
                 padding: 5px 5px;
             }
-            
+            .image img{
+                
+                left: 55.3%;
+                
+            }
+            .about-text{
+                
+                padding-top: 0.5rem;
+               
+              
+            }
+         
            
         }
    
