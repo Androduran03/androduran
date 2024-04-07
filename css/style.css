@@ -271,6 +271,7 @@ overflow: hidden;
     margin-bottom: 20px;
     width: 50%;
     text-align: justify;
+    
    
   
 }
@@ -280,7 +281,7 @@ overflow: hidden;
 }
 .about-text p{
     margin-bottom: 2rem;
-    font-weight: 100;
+    font-weight: 90;
     font-size: 1.2rem;
 }
 .about-text a{
@@ -748,6 +749,46 @@ font-size: 27px;
          
          }
 }
+@media(max-width:1024px){
+ .about p{
+
+     text-align: left;
+     font-size: 20px;
+     color: white;
+     font-weight: 100;
+     font-family: 'inter';
+    }
+     .skills .row-skills{
+    flex-wrap: nowrap;
+
+  
+ }
+ .skills .row-skills .col-skills{
+   
+    width: 100px;
+    height: 100px;
+ }
+ .skills .row-skills .col-skills img{
+    
+    width: 100%;
+    height: 100%;
+ }
+ .hero{
+    display: flex;
+   
+justify-content: center;
+ }
+ .hero .hero-img{
+    margin: auto;
+    justify-content: center;
+ }
+ .hero .main-content{
+  padding-top: 2rem;
+  /* margin: auto; */
+   text-align: center;
+ }
+
+}
 @media(max-width:950px){
     :root{
         --h1-font:3rem
@@ -781,6 +822,9 @@ font-size: 27px;
         
         flex-wrap: wrap;
     }
+    .skills .row-skills{
+        flex-wrap: wrap;
+    }
 }
     @media(max-width:680px){
         html{
@@ -800,10 +844,10 @@ font-size: 27px;
              text-align: center;
              flex-wrap: wrap;
          }
-         .hero-img{
-            left: 13.5rem;
-             position: relative;
-             text-align: center;
+.hero .hero-img{
+            
+             
+            margin: auto;
      margin-bottom: 3rem;
              width: 310px;
              height: 310px;
@@ -862,17 +906,17 @@ font-size: 27px;
             height: 100%;
         }
         .hero{
-           margin: 0 auto;
-            padding:110px 2rem 3rem ;
+           display: flex;
+           justify-content: center;
+            
+
         }
         .hero .main-content{
             width: 100%;
             text-align: center;
         }
-        .hero-img{
-           left: 9.2rem;
-            position: relative;
-            text-align: center;
+        .hero .hero-img{
+         margin: auto;
     margin-bottom: 3rem;
             width: 210px;
             height: 210px;
@@ -913,11 +957,8 @@ font-size: 27px;
             /* .skils .colskills{
                 border: 1px solid;
             } */
-        }
-        @media(max-width: 470px) {
-            .hero-img{
-                left: 6.8rem;
-             }
+        
+    
              .h-btn{
                 padding: 5px 5px;
             }
